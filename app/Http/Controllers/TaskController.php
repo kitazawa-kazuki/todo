@@ -7,6 +7,7 @@ use App\Task;
 use App\Folder;
 use App\Http\Requests\EditTask;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Psy\TabCompletion\Matcher\FunctionsMatcher;
 
 class TaskController extends Controller
@@ -18,6 +19,7 @@ class TaskController extends Controller
     $folders = Folder::all();
     $current_folder = Folder::find($id);
     $tasks = $current_folder->tasks()->get();
+    $folders= Auth::user()->folders()->get();
 
     return view('tasks/index', [
       'folders' => $folders,
