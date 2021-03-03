@@ -12,7 +12,7 @@ class TaskTest extends TestCase
 
   use RefreshDatabase;
 
-  public function setUp(): void
+  public function setUp():
   {
     parent::setUp();
 
@@ -66,3 +66,4 @@ class TaskTest extends TestCase
     ]);
   }
 }
+?>

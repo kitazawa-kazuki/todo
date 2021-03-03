@@ -30,4 +30,3 @@ class CreateFoldersTable extends Migration
         Schema::dropIfExists('folders');
     }
 }
-?>
