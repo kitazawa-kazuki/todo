@@ -32,6 +32,8 @@
       </nav>
       <div class="text-center">
         <a href="{{ route('password.request') }}">パスワードの変更はこちらから</a>
+        <br>
+        <a href="{{ route('register') }}">会員登録はこちらから</a>
       </div>
     </div>
   </div>
