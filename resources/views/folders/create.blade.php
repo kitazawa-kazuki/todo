@@ -21,6 +21,7 @@
               <input type="text" class="form-control" name="title" id="title" value="{{ old('title') }}" />
             </div>
             <div class="text-right">
+              <a class="btn btn-link" href="{{ route('home') }}">キャンセル</a>
               <button type="submit" class="btn btn-primary">送信</button>
             </div>
           </form>
