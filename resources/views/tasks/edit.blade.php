@@ -39,6 +39,7 @@
               <input type="text" class="form-control" name="due_date" id="due_date" value="{{ old('due_date', $task->formatted_due_date) }}" />
             </div>
             <div class="text-right">
+              <a class="btn btn-link" href="{{ url()->previous() }}">キャンセル</a>
               <button type="submit" class="btn btn-primary">送信</button>
             </div>
           </form>
