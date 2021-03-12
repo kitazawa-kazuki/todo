@@ -9,13 +9,13 @@ class FolderPolicy
 {
 
 
-  /**
-   * Create a new policy instance.
-   *
-   * @return void
-   */
-  public function view(user $user, Folder $folder)
-  {
-    return $user->id === $folder->user_id;
-  }
+    /**
+     * Create a new policy instance.
+     *
+     * @return void
+     */
+    public function view(user $user, Folder $folder)
+    {
+        return $user->id === $folder->user_id;
+    }
 }
