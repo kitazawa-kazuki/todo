@@ -32,6 +32,13 @@ a.my-navbar-item:hover {
     color: #ffffff;
 }
 
+.table td:nth-child(1) {
+    max-width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .table td:nth-child(2),
 .table td:nth-child(3),
 .table td:nth-child(4){
