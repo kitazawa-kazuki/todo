@@ -27,6 +27,7 @@ class EditTask extends CreateTask
             'status' => 'required|' . $status_rule,
         ];
     }
+
     public function attributes()
     {
         $attributes = parent::attributes();

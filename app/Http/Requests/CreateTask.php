@@ -36,6 +36,7 @@ class CreateTask extends FormRequest
             'due_date' => '期限日',
         ];
     }
+
     public function messages()
     {
         return [

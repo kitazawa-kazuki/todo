@@ -18,12 +18,10 @@ class Task extends Model
      * 状態を表すHTMLクラス
      * @return string
      */
-
     public function getStatusLabelAttribute()
     {
 
         $status = $this->attributes['status'];
-
 
         if (!isset(self::STATUS[$status])) {
             return '';
