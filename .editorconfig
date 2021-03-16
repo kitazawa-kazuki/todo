@@ -13,4 +13,3 @@ trim_trailing_whitespace = false
 
 [*.{yml,html,js,css,blade.php}]
 indent_size = 2
-insert_final_newline = true

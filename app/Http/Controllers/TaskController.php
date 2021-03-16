@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Auth;
 
 class TaskController extends Controller
 {
-
     public function index(Folder $folder)
     {
         $folders = Auth::user()->folders()->get();
@@ -33,17 +32,16 @@ class TaskController extends Controller
 
     public function create(Folder $folder, CreateTask $request)
     {
-
         $task = new Task();
         $task->title = $request->title;
         $task->due_date = $request->due_date;
-
         $folder->tasks()->save($task);
 
         return redirect()->route('tasks.index', [
             'id' => $folder->id,
         ]);
     }
+
     public function showEditForm(Folder $folder, Task $task)
     {
         if ($folder->id !== $task->folder_id) {
