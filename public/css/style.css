@@ -9,13 +9,13 @@ body {
 }
 
 .my-navbar {
-  align-items: center;
-  background: #333;
-  display: flex;
-  height: 6rem;
-  justify-content: space-between;
-  padding: 0.2%;
-  margin-bottom: 3rem;
+    align-items: center;
+    background: #333;
+    display: flex;
+    height: 6rem;
+    justify-content: space-between;
+    padding: 0 2%;
+    margin-bottom: 3rem;
 }
 
 .my-navbar-brand {
@@ -30,6 +30,13 @@ body {
 .my-navbar-brand:hover,
 a.my-navbar-item:hover {
   color: #ffffff;
+}
+
+.table td:nth-child(1) {
+    max-width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .table td:nth-child(2),
