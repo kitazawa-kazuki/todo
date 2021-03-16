@@ -7,16 +7,15 @@ use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
-  public function index()
-  {
-    $user = Auth::user();
-    $folder = $user->folders()->first();
-    if (is_null($folder)) {
-      return view('home');
+    public function index()
+    {
+        $user = Auth::user();
+        $folder = $user->folders()->first();
+        if (is_null($folder)) {
+            return view('home');
+        }
+        return redirect()->route('tasks.index', [
+            'id' => $folder->id,
+        ]);
     }
-    return redirect()->route('tasks.index', [
-      'id' => $folder->id,
-    ]);
-  }
 }
-?>

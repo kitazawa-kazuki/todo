@@ -9,29 +9,29 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 
 class ResetPassword extends Mailable
 {
-  use Queueable, SerializesModels;
+    use Queueable, SerializesModels;
 
-  /**
-   * Create a new message instance.
-   *
-   * @return void
-   */
-  public function __construct($token)
-  {
-    $this->token = $token;
-  }
+    /**
+     * Create a new message instance.
+     *
+     * @return void
+     */
+    public function __construct($token)
+    {
+        $this->token = $token;
+    }
 
-  /**
-   * Build the message.
-   *
-   * @return $this
-   */
-  public function build()
-  {
-    return $this
-      ->subject('パスワード再設定')
-      ->view('mail.password-reset',[
-      'token' => $this->token,
-      ]);
-  }
+    /**
+     * Build the message.
+     *
+     * @return $this
+     */
+    public function build()
+    {
+        return $this
+            ->subject('パスワード再設定')
+            ->view('mail.password-reset', [
+                'token' => $this->token,
+            ]);
+    }
 }

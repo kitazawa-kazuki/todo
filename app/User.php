@@ -49,4 +49,3 @@ class User extends Authenticatable
         Mail::to($this)->send(new ResetPassword($token));
     }
 }
-?>
