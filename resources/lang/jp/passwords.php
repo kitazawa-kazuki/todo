@@ -2,7 +2,7 @@
 
 return [
 
-  /*
+    /*
     |--------------------------------------------------------------------------
     | Password Reset Language Lines
     |--------------------------------------------------------------------------
@@ -13,11 +13,10 @@ return [
     |
     */
 
-  'password' => 'Passwords must be at least eight characters and match the confirmation.',
-  'reset' => 'パスワードを再設定しました。',
-  'sent' => 'パスワード再設定リンクを送信しました。',
-  'token' => 'トークンが無効です。',
-  'user' => "入力されたメールアドレスのユーザーは見つかりませんでした。",
+    'password' => 'Passwords must be at least eight characters and match the confirmation.',
+    'reset' => 'パスワードを再設定しました。',
+    'sent' => 'パスワード再設定リンクを送信しました。',
+    'token' => 'トークンが無効です。',
+    'user' => "入力されたメールアドレスのユーザーは見つかりませんでした。",
 
 ];
-?>
