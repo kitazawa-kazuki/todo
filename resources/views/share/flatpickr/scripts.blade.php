@@ -3,7 +3,8 @@
 <script>
   flatpickr(document.getElementById('due_date'), {
     locale: 'ja',
-    dateformat: "Y/m/d",
+    disableMobile: "true",
+    dateFormat: "Y/m/d",
     minDate: new Date()
   });
 </script>
